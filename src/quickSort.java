@@ -53,11 +53,21 @@ public class quickSort {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 7, 66, 443, 232, 44, 6, 7, 13, 53, 135};
 
-        System.out.println("The array before : " + Arrays.toString(array));
+        System.out.println("The array before : ");
+        System.out.println(Arrays.toString(array));
         quicksort(array, 0, array.length - 1);
 
         System.out.println("The array after quick sort : ");
         System.out.println(Arrays.toString(array));
+
+        /*
+        output =The array before :
+               [1, 2, 3, 4, 7, 66, 443, 232, 44, 6, 7, 13, 53, 135]
+
+               The array after quick sort :
+              [1, 2, 3, 4, 6, 7, 7, 13, 66, 44, 53, 135, 443, 232]
+
+         */
     }
 
 }
